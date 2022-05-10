@@ -139,7 +139,7 @@ function Register ({ apiUrl }: any) {
                                         value={password}
                                         minLength={4}
                                         maxLength={8}
-                                        placeholder="Kayıt bilgilerinize erişmek için pin girin"
+                                        placeholder="Hesabınız için şifre oluşturun"
                                         onChange={(e: any) => setPassword(e.target.value)}
                                     />
                                 </div>

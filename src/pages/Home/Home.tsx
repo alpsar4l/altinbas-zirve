@@ -7,10 +7,40 @@ import { PremiumIcon, PhoneIcon, MessageIcon, LocationPinIcon } from "../../util
 function Home () {
     const speakers = [
         {
+            name: "Sami Duman",
+            picture: "sami-duman.jpg",
+            title: "Strateji Direktörü",
+            company: "Aselsan"
+        },
+        {
+            name: "Görkem Şimşek",
+            picture: "gorkem-simsek.jpg",
+            title: "Mühendislik Geliştirme Programları Sefi",
+            company: "Tusaş"
+        },
+        {
+            name: "Murat Şişman",
+            picture: "murat-sisman.jpg",
+            title: "Teknoloji Müdürü",
+            company: "Pavotek"
+        },
+        {
             name: "Selim Okutur",
             picture: "selim-okutur.jpg",
             title: "Pazarlama ve Satış Müdürü",
             company: "Toyota"
+        },
+        {
+            name: "Fatih Hüseyin Kaya",
+            picture: "huseyin-kaya.jpg",
+            title: "Yazılım Uzmanı",
+            company: "VakıfBank"
+        },
+        {
+            name: "Olgar Ataseven",
+            picture: "olgar-ataseven.jpg",
+            title: "Genel Müdür Yardımcısı",
+            company: "Workcube"
         },
         {
             name: "Merve Kuzu",
@@ -25,46 +55,28 @@ function Home () {
             company: ""
         },
         {
-            name: "Murat Şişman",
-            picture: "murat-sisman.jpg",
-            title: "Teknoloji Müdürü",
-            company: "Pavotek"
-        },
-        {
-            name: "Fatih Hüseyin Kaya",
-            picture: "avatar.png",
-            title: "Software Specialist",
-            company: "VakıfBank"
-        },
-        {
-            name: "Mahmut Feyyaz Koksal",
-            picture: "mahmut-koksal.jpg",
-            title: "Mekanik Tasarım Mühendisi",
-            company: "CORNEA Aero Systems"
-        },
-        {
-            name: "Olgar Ataseven",
-            picture: "olgar-ataseven.jpg",
-            title: "Genel Müdür Yardımcısı",
-            company: "Workcube"
-        },
-        {
             name: "Mehmet Kayhan",
             picture: "mehmet-kayhan.jpg",
             title: "Yönetim Kurulu Başkanı",
             company: "KAIVEN Enerji"
         },
         {
-            name: "",
-            picture: "avatar.png",
-            title: "",
-            company: "Ensotech"
-        },
-        {
             name: "Yarenaz Demir",
             picture: "yarenaz-demir.jpg",
             title: "DevOps System Engineer",
             company: "Vodafone"
+        },
+        {
+            name: "Besime Özderici",
+            picture: "besime-ozderici2.png",
+            title: "Yönetim Kurulu Başkanı",
+            company: "SolarAPEX"
+        },
+        {
+            name: "Mahmut Feyyaz Koksal",
+            picture: "mahmut-koksal.jpg",
+            title: "Mekanik Tasarım Mühendisi",
+            company: "CORNEA Aero Systems"
         },
     ];
     const sponsorships = [
@@ -75,7 +87,7 @@ function Home () {
             logo: "redbull.svg"
         },
         {
-            logo: "nescafe.svg"
+            logo: "17553395_1270266323070156_6975642268144278693_n.png"
         }
     ];
 
@@ -216,7 +228,7 @@ function Home () {
                                             <PhoneIcon />
                                         </div>
                                         <div className="text">
-                                            <span>+90 123 456 78 90</span>
+                                            <span>+90 539 336 17 73</span>
                                         </div>
                                     </div>
                                     <div className="address-details">

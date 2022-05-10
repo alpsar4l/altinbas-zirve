@@ -13,6 +13,8 @@ const corsOptions = {
     origin: [
         "http://localhost:1232",
         "http://localhost:1231",
+        "http://localhost:2004",
+        "http://localhost:2005",
         "http://localhost:9000",
         "http://localhost:3000",
         "http://localhost:9999",

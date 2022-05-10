@@ -12,7 +12,8 @@ import Login from "./pages/Login/Login";
 import Account from "./pages/Account/Account";
 
 function App() {
-    const apiUrl = "http://18.194.209.204:2004";
+    // const apiUrl = "http://18.194.209.204:2004";
+    const apiUrl = "http://localhost:2004";
 
     return (
         <div className="app">
