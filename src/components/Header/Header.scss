@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0;
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            grid-gap: 7px;
+
+            svg {
+                height: 45px;
+                fill: #1e1f28;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    user-select: none;
+                    color: #1e1f28;
+
+                    &:nth-child(1) {
+                        font-size: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: -3px;
+                        font-family: "Gilroy-Bold", sans-serif;
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            grid-gap: 19px;
+
+            .nav-items {
+                display: flex;
+                align-items: center;
+                grid-gap: 19px;
+
+                .nav-item {
+                    font-size: 20px;
+                    cursor: pointer;
+                    user-select: none;
+                    opacity: 0.7;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .client-area {
+                .button {
+                    border: 1px solid #1e1f28;
+                    padding: 8px 16px;
+                    border-radius: 30px;
+                    user-select: none;
+                    cursor: pointer;
+
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 3px;
+
+                    svg {
+                        height: 23px;
+                        fill: #1e1f28;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        color: #1e1f28;
+                    }
+
+                    &:hover {
+                        background: rgba(30, 31, 40, 0.07);
+                    }
+                }
+            }
+        }
+    }
+}

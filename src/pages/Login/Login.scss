@@ -1,0 +1,329 @@
+:root {
+    --PhoneInput-color--focus:#03b2cb;
+    --PhoneInputInternationalIconPhone-opacity:0.8;
+    --PhoneInputInternationalIconGlobe-opacity:0.65;
+    --PhoneInputCountrySelect-marginRight:0.35em;
+    --PhoneInputCountrySelectArrow-width:0.3em;
+    --PhoneInputCountrySelectArrow-marginLeft:var(--PhoneInputCountrySelect-marginRight);
+    --PhoneInputCountrySelectArrow-borderWidth:1px;
+    --PhoneInputCountrySelectArrow-opacity:0.45;
+    --PhoneInputCountrySelectArrow-color:inherit;
+    --PhoneInputCountrySelectArrow-color--focus:var(--PhoneInput-color--focus);
+    --PhoneInputCountrySelectArrow-transform:rotate(45deg);
+    --PhoneInputCountryFlag-aspectRatio:1.5;
+    --PhoneInputCountryFlag-height:1em;
+    --PhoneInputCountryFlag-borderWidth:1px;
+    --PhoneInputCountryFlag-borderColor:rgba(0, 0, 0, 0.5);
+    --PhoneInputCountryFlag-borderColor--focus:var(--PhoneInput-color--focus);
+    --PhoneInputCountryFlag-backgroundColor--loading:rgba(0, 0, 0, 0.1);
+}
+
+.PhoneInput {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.PhoneInputInput {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
+.PhoneInputCountryIcon {
+    height: 60%;
+    position: absolute;
+
+    img {
+        border-radius: 5px;
+    }
+}
+
+.PhoneInputCountryIconImg {
+    display: block;
+    height: 100%;
+}
+
+.PhoneInputCountry {
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    width: 59px;
+
+    padding: 0 10px;
+
+    border: 2px solid rgba(128, 128, 128, 0.27);
+    border-radius: 7px;
+}
+
+.PhoneInputCountrySelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    &[disabled], &[readonly] {
+        cursor: default;
+    }
+}
+
+.PhoneInputCountrySelectArrow {
+    display: none;
+}
+
+.zirve-select-container {
+    width: 100% !important;
+
+    .zirve-select {
+        &__control {
+            border: 2px solid rgba(128, 128, 128, 0.27);
+        }
+
+        &__menu {
+            margin: 0.125rem auto;
+        }
+
+        &__option {
+            background-color: white;
+            cursor: pointer;
+
+            &--is-focused {
+                background-color: rgba(215, 215, 215, 0.38);
+            }
+        }
+
+        &__group {
+            padding: 0;
+        }
+
+        &__menu-portal {
+            border: 2px solid #7294d4;
+        }
+    }
+}
+
+.register-page {
+    background: linear-gradient(45deg, rgba(85, 220, 251, 0.1), rgba(91, 32, 255, 0.08));
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+
+    .register-content {
+        max-width: 530px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0;
+        height: 100%;
+
+        .register-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
+
+            .register-title {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                user-select: none;
+
+                .icon {
+                    svg {
+                        height: 45.5px;
+                        fill: #1c1e28;
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3px;
+
+                    span {
+                        color: #1c1e28;
+
+                        &:nth-child(1) {
+                            font-family: "Gilroy-Medium", sans-serif;
+                            font-size: 18px;
+                        }
+
+                        &:nth-child(2) {
+                            font-family: "Gilroy-Bold", sans-serif;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .register-form {
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.93);
+            box-shadow: 0 0 10px 0 rgba(198, 201, 205, 0.23);
+            backdrop-filter: blur(50px);
+            width: 100%;
+            margin-bottom: 30px;
+
+            .register-content[data-no-border="true"] {
+                border-bottom: none;
+            }
+
+            .register-content {
+                padding: 20px;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+
+                .title {
+                    span {
+                        font-family: "Gilroy-Bold", sans-serif;
+                        font-size: 20px;
+                    }
+                }
+
+                .input {
+                    margin-top: 10px;
+                    display: flex;
+                    grid-gap: 10px;
+
+                    input {
+                        font-size: 18px;
+                        width: 100%;
+                        padding: 9px;
+                        border-radius: 7px;
+                        border: 2px solid rgba(128, 128, 128, 0.27);
+                        outline: none;
+                        transition: .1s;
+
+                        &:focus {
+                            border: 2px solid #7294d4;
+                        }
+                    }
+                }
+            }
+
+
+            .register-button-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .register-handshake {
+                    width: 50%;
+
+                    span {
+                        color: #9aa0a9;
+                        font-size: 14px;
+                    }
+                }
+
+                .register-button {
+                    padding: 12px 30px;
+                    border-radius: 30px;
+                    background: #e3e5e7;
+                    cursor: pointer;
+                    user-select: none;
+
+                    span {
+                        font-family: "Gilroy-Bold", sans-serif;
+                        font-size: 19px;
+                    }
+
+                    &:hover {
+                        background: #dadddf;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .register-page {
+        .register-content {
+            .register-form {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .register-page .register-content .register-form .register-content .input {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .register-page .register-content .register-form .register-button-container {
+        flex-direction: column;
+        text-align: center;
+
+        .register-handshake {
+            width: 100%;
+        }
+
+        .register-button {
+            margin-top: 20px;
+        }
+    }
+}
+
+.login-section {
+    .title {
+        padding-top: 25px;
+        padding-bottom: 10px;
+        text-align: center;
+
+        span {
+            color: #3a3c3f;
+            font-size: 28px;
+            font-family: "Gilroy-Bold", sans-serif;
+        }
+    }
+
+    .login-buttons {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border: 1px solid rgba(128, 128, 128, 0.28);
+            border-radius: 15px;
+            cursor: pointer;
+            user-select: none;
+            text-align: center;
+
+            span {
+                color: #3a3c3f;
+
+                &:nth-child(1) {
+                    font-family: "Gilroy-Bold", sans-serif;
+                    font-size: 28px;
+                }
+
+                &:nth-child(2) {
+                    font-family: "Gilroy-Medium", sans-serif;
+                    font-size: 19px;
+                }
+            }
+
+            &:hover {
+                background: rgba(128, 128, 128, 0.09);
+            }
+
+            &:active {
+                transform: scale(0.97);
+            }
+        }
+    }
+}
