@@ -54,6 +54,10 @@ app.get('/login', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+app.get('/account', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.post('/login', (req, res) => {
     const data = req.body;
 
