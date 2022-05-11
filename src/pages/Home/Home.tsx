@@ -13,7 +13,7 @@ function Home () {
             company: "Aselsan"
         },
         {
-            name: "Görkem Şimşek",
+            name: "Dr. Görkem Şimşek",
             picture: "gorkem-simsek.jpg",
             title: "Mühendislik Geliştirme Programları Sefi",
             company: "Tusaş"
@@ -31,10 +31,10 @@ function Home () {
             company: "Toyota"
         },
         {
-            name: "Fatih Hüseyin Kaya",
-            picture: "huseyin-kaya.jpg",
-            title: "Yazılım Uzmanı",
-            company: "VakıfBank"
+            name: "Mehmet Ferit Erel",
+            picture: "75da14d8-704c-4fce-aab5-f4b2a83673f9.jpg",
+            title: "IT Proje Yöneticisi",
+            company: "Getir"
         },
         {
             name: "Olgar Ataseven",
@@ -43,16 +43,16 @@ function Home () {
             company: "Workcube"
         },
         {
-            name: "Merve Kuzu",
-            picture: "merve-kuzu.jpg",
-            title: "Pazarlama ve Satış Müdürü",
-            company: "Huawei"
+            name: "Doç. Dr. Süleyman Baştürk",
+            picture: "suleyman-basturk1.png",
+            title: "Müdür",
+            company: "Autonom"
         },
         {
-            name: "Taner Yıldız",
-            picture: "taner-yıldız.jpg",
-            title: "Kayseri Milletvekili",
-            company: ""
+            name: "Mehmet Nuri Şahin",
+            picture: "mehmet-nuri.jpg",
+            title: "Senior Yazılım Mühendisi",
+            company: "LC Waikiki"
         },
         {
             name: "Mehmet Kayhan",
@@ -61,10 +61,10 @@ function Home () {
             company: "KAIVEN Enerji"
         },
         {
-            name: "Yarenaz Demir",
-            picture: "yarenaz-demir.jpg",
-            title: "DevOps System Engineer",
-            company: "Vodafone"
+            name: "Fatih Hüseyin Kaya",
+            picture: "huseyin-kaya.jpg",
+            title: "Yazılım Uzmanı",
+            company: "VakıfBank"
         },
         {
             name: "Besime Özderici",
