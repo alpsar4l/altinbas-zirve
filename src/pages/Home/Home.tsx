@@ -27,7 +27,7 @@ function Home () {
         {
             name: "Selim Okutur",
             picture: "selim-okutur.jpg",
-            title: "Pazarlama ve Satış Müdürü",
+            title: "Türkiye Kurumsal İlişkiler Direktörü",
             company: "Toyota"
         },
         {
@@ -46,7 +46,7 @@ function Home () {
             name: "Doç. Dr. Süleyman Baştürk",
             picture: "suleyman-basturk1.png",
             title: "Müdür",
-            company: "Autonom"
+            company: "AUTONOM"
         },
         {
             name: "Mehmet Nuri Şahin",
