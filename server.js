@@ -72,6 +72,22 @@ app.post('/login', (req, res) => {
     }
 });
 
+app.post('/visitor_add', (req, res) => {
+    const data = req.body;
+
+    if (
+        data.id === "" || data.id === undefined ||
+        data.date === "" || data.date === undefined ||
+        data.device === "" || data.device === undefined
+    ) {
+        res.send({ message: "bruh" });
+    } else {
+        con.query(`INSERT INTO visitors (id, uuid, date, staff_device) VALUES (NULL, "${data.id}", "${data.date}", "${data.device}")`, (err, result, fields) => {
+            res.send({ message: "ok" });
+        });
+    }
+})
+
 app.post('/delete_account', (req, res) => {
     const data = req.body;
 
